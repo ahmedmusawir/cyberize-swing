@@ -1,0 +1,142 @@
+/**
+ *
+ * General Styles for Sidebar Orange Commercial
+ *
+ */
+
+#sidebar-orange-commercial {
+
+	.search-form {
+		label {
+			display: block;
+			width: 65%;
+		}
+		input {
+			width: 100%;
+		}
+		.search-field {
+			padding-top: .5rem;
+			padding-bottom: .5rem;
+			outline-color: $cg-accent;
+			border:1px solid lighten($cg-accent, 0%);
+			background-color: white;
+			text-align: left;
+			padding-left: 15px;
+			padding-right: 57px;
+			border-radius: 0px;
+
+			&::before {
+				content: 'Search';
+				position: absolute;
+				right: 0px;
+				color: #000;
+				z-index: 11;
+			}
+		}
+		.screen-reader-text {
+
+			width: 100%;
+			position: relative;
+
+			&::after {
+				content: 'Search';
+				position: absolute;
+				right: 0px;
+				color: $black;
+				z-index: 11;
+			}
+		}
+		.search-submit {
+			border: 1px solid $cg-secondary;
+			border-radius: 0px;
+		    border: 1px solid #d4c1aa;
+		    position: absolute;
+		    top: 0px;
+		    width: 55px;
+		    height: 42px;
+		    right: 15px;
+			color: $white;
+			border-radius: 0px 3px 3px 0px;
+			background: $cg-button;
+			text-transform: uppercase;
+			width: 30%;
+			border-radius: 0px;
+			border-color: $cg-button;
+			font-family: Montserrat;
+			font-size: 14px;
+			display: inline-block;
+
+			&:hover {
+				background-color: lighten($cg-button, 10%);
+				color: white;
+			}
+		}
+	}
+
+	.widget {
+		padding: 1rem 1.5rem;
+		// margin-top: 2rem;
+		margin-bottom: 2rem;
+		background: url('../../../assets/img/property-listings-box.png') 0px 0px no-repeat;
+
+
+		ul {
+			list-style-type: none;
+			padding-inline-start: 0px;
+
+			li {
+				padding-top: .85rem;
+				padding-bottom: .85rem;
+
+
+				// border-bottom: 2px solid lighten($cg-primary, 10%);
+
+				a {
+					color: $cg-button !important;
+					font-size: 15px;
+					display: inline-block;
+					width: 82%;
+    				vertical-align: middle;
+				}
+
+				&:hover {
+					// border: 1px solid $cg-secondary;
+					text-decoration: none;
+					a {
+						color: lighten($cg-button, 20%) !important;
+						text-decoration: underline !important;
+					}
+				}
+
+				&:before {
+					font-family: 'FontAwesome';
+ 					content: "\f0da";
+					color: $cg-button !important;
+				    height: 0.75rem;
+				    width: 0.75rem;
+					margin-right: 12px;
+					padding: 0 12px !important;
+					// border-bottom: 1px solid $cg-accent;
+					vertical-align: middle;
+				}
+			}
+		}
+
+		&.widget_media_image {
+
+			.widget-title {
+
+				margin-bottom: 20px !important;
+			}
+		}
+	}
+
+	.widgettitle, .widget-title {
+		font-size: 1.3rem;
+		font-weight: 500 !important;
+		color: $primary;
+    	font-weight: normal;
+		// border-bottom: 2px solid lighten($cg-accent, 20%);
+		padding-bottom: 15px;
+	}
+}

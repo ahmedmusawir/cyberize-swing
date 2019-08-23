@@ -1,0 +1,307 @@
+/**
+ *
+ * STYLES: Blog Index Block Orange Commercial
+ *
+ */
+
+.search-index-orange-commercial {
+
+	background-color: $cg-secondary;
+
+	.block-after-header {
+
+		background-color: $cg-primary-light;
+		padding-top: 40px;
+		padding-bottom: 30px;
+		margin-top: 50px;
+		text-align: center;
+
+		@media (max-width: 781px) {
+			margin-top: 50px;
+		}
+
+		h1 {
+
+			color: $white;
+			text-transform: uppercase;
+			margin-bottom: 0px;
+
+			@media (max-width: 542px) {
+				font-size: 2rem;
+			}
+
+			@media (max-width: 440px) {
+				font-size: 1.5rem;
+			}
+		}
+	}
+
+	.container {
+		padding: 2rem;
+		margin-top: 2rem;
+	}
+
+	.post-item {
+
+		&:nth-child(odd) {
+
+			.entry-content {
+
+				.row {
+
+					flex-direction: row-reverse;
+				}
+			}
+		}
+	}
+
+	.post-nav-holder {
+		margin-top: 2rem;
+		border: 1px solid $cg-button;
+		border-radius: 50px;
+		padding: 1rem 3rem;
+		background-color: $cg-primary;
+
+		.nav-links {
+
+			.nav-previous {
+				float: left;
+				padding-right: 1rem;
+			}
+			.nav-next {
+				float: right;
+			}
+		}
+	}
+
+ 	.post-item {
+ 		// text-align: center;
+ 		// box-shadow: 1px 1px 6px lighten($cg-primary, 20%);
+
+ 		.entry-content {
+
+	 		margin-bottom: 2rem;
+			background-color: $white;
+			padding: 15px;
+
+			p {
+
+				color: #000;
+			}
+
+ 			.featured-image-box {
+				float: none;
+	 			overflow: hidden;
+				margin: 0 0 0rem;
+	 			// margin-top: 1rem;
+
+				img {
+				    @include transition-property(all);
+				    @include transition-duration(.5s);
+				    @include transition-timing-function(ease);
+					width: 100%;
+
+					&:hover {
+						@include transform(scale(1.1));
+						opacity: .5;
+					}
+				}
+	 		}
+
+			.post-content-meta {
+
+				max-width: 30%;
+				margin: auto;
+
+				@media (max-width: 771px) {
+
+					max-width: 80%;
+					padding: 20px 0;
+				}
+
+				.post-excerpt {
+
+					overflow: hidden;
+					display: -webkit-box;
+					-webkit-line-clamp: 3;
+					-webkit-box-orient: vertical;
+
+					p {
+
+						color: #525151;
+						font-weight: 100;
+						font-size: $primary-font;
+						margin-bottom: 0px;
+					}
+				}
+
+				.gc-post-item-footer {
+
+					.cat-links {
+
+						a {
+							color: #5998C5;
+							font-size: 14px;
+							font-family: $primary-font;
+						}
+					}
+
+					.comments-count {
+
+						float: right;
+						font-size: 14px;
+
+						&::before {
+
+							content: url(../../../assets/img/speech-balloon-icon.png);
+						    display: inline-block;
+						    vertical-align: top;
+						    padding-right: 15px;
+							vertical-align: middle;
+						}
+					}
+				}
+
+				.moretag {
+					display: block;
+					clear: both;
+					float: right;
+					background: transparent;
+					font-size: 1rem;
+					font-weight: 700;
+					color: $cg-link;
+					border: none;
+					margin-top: 1.5rem;
+
+					&:hover {
+						color: darken($cg-button, 15%) !important;
+					}
+
+					@media (max-width: 474px) {
+						float: none;
+					}
+				}
+				.entry-title {
+					font-size: 1.3rem ;
+					font-weight: 600;
+					margin-top: 0rem;
+
+
+					a {
+						color: $cg-button;
+						color: #5998C5;
+
+						&:hover {
+							color: $cg-link;
+						}
+
+						&:active {
+
+							color: $cg-link;
+						}
+					}
+				}
+				.entry-meta {
+					// padding-bottom: 2rem;
+
+					padding-bottom: 7px;
+
+					span {
+
+						&.posted-on {
+
+							// padding-left: 99px;
+
+							&:before {
+
+								content: '';
+							}
+
+							@media (max-width: 456px) {
+								padding-left: 15px !important;
+							}
+						}
+					}
+
+					.posted-on {
+						font-size: 13px;
+    					font-weight: 200;
+
+						&:before {
+							font-family: 'FontAwesome';
+							content: "\f017";
+							color: $cg-secondary;
+							padding-right: .5rem;
+							padding-left: .5rem;
+						}
+					}
+
+					.bylines {
+						// border: 1px solid red;
+						text-transform: capitalize;
+						font-size: 13px;
+    					font-weight: 200;
+
+						a {
+							color: #1F487E;
+						}
+
+						&:before {
+							// font-family: 'FontAwesome';
+							// content: "\f234";
+							color: $cg-secondary;
+							padding-right: .5rem;
+							padding-left: .5rem;
+						}
+					}
+				}
+			}
+	 	}
+ 	}
+
+
+	/* ---------- SIDEBAR WIGHET STYLE START ---------- */
+
+	#blog-index-widget {
+
+		margin-bottom: 60px;
+
+		.widget_categories {
+
+			.widget-title {
+
+				display: none !important;
+			}
+
+			ul {
+
+				list-style-type: none;
+				padding: 0px;
+				text-align: center;
+
+				li {
+
+					display: inline-block;
+					background-color: $white;
+				    border-radius: 100px;
+				    margin-right: 20px;
+				    min-width: 80px;
+				    text-align: center;
+					margin-top: 20px;
+
+					a {
+
+						color: #5998C5;
+						font-weight: 600;
+						font-family: $primary-font;
+						font-size: 15px;
+						padding: 10px 20px;
+						display: block;
+					}
+				}
+			}
+		}
+	}
+
+	/* ---------- SIDEBAR WIGHET STYLE END ---------- */
+ }

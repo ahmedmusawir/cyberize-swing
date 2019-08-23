@@ -1,0 +1,201 @@
+
+/* ------------ GRAVITY FORM STYLE START ------------ */
+#OCR-free-estimate-form {
+
+    .gform_wrapper {
+
+        margin: 0px;
+        padding: 2rem 1.5rem 0rem;
+
+        .gform_heading {
+
+            .gform_title {
+
+                //padding: 31px 20px 15px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                font-size: 28px;
+                line-height: 30px;
+                text-align: center;
+                text-transform: none;
+                margin-top: 0;
+                color: #fff;
+                font-weight: 400;
+            }
+
+            .gform_description {
+                font-family: 'Open Sans',sans-serif;
+                font-size: 14px;
+                line-height: 20px;
+                text-align: center;
+                padding-right: 20px;
+                padding-left: 20px;
+                margin-top: 0;
+                color: #fff;
+                font-weight: 400;
+            }
+        }
+
+        .gform_fields {
+
+            li {
+
+                padding-right: 0px !important;
+            }
+        }
+
+        .ginput_container_text {
+
+            input {
+
+                display: block;
+                width: 100%;
+                height: 38px;
+                padding: 8px 12px;
+                margin-bottom: 10px;
+                font-size: 14px;
+                line-height: 1.42857143;
+                color: #333;
+                vertical-align: middle;
+                background-color: #fff;
+                border: 1px #a9c455;
+                border-radius: 5px;
+            }
+        }
+
+        .gform_footer {
+
+            padding: 0px;
+            margin: 0px;
+
+            .gform_button {
+                font-size: 16px;
+                display: inline-block;
+                border-radius: 5px 5px 4px !important;
+                background-color: #3db319;
+                -webkit-transition: -webkit-transform .2s ease;
+                transition: -webkit-transform .2s ease;
+                transition: transform .2s ease;
+                transition: transform .2s ease,-webkit-transform .2s ease;
+                font-family: Montserrat,sans-serif;
+                display: inline-block;
+                padding: 9px 15px;
+                color: #fff;
+                border: 0;
+                line-height: inherit;
+                text-decoration: none;
+                cursor: pointer;
+                border-radius: 0;
+                width: 100%;
+
+                @media screen and (max-width: 410px) {
+
+                    font-size: 14px;
+                    padding: 9px 0px;
+                }
+            }
+        }
+    }
+}
+/* ------------ GRAVITY FORM STYLE END ------------ */
+
+
+
+/* ------------ GALLERY STYLE START ------------*/
+#OCR-envira-gallery {
+    .envira-gallery-wrap {
+
+        .envira-gallery-public {
+
+            .envira-gallery-item {
+
+                img {
+
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+}
+/* ------------ GALLERY STYLE START ------------*/
+
+
+
+
+/* ------------ IMAGE LIST STYLE START ------------ */
+
+#OCR-image-list {
+
+    .thrv-columns {
+
+        &:not(:last-child) {
+
+            .tcb-flex-row {
+
+                @media screen and (max-width: 767px) {
+                    display: flex;
+                    flex-direction: row;
+                }
+
+                .tcb-flex-col {
+
+                    .tcb-col {
+                        justify-content: center;
+                    }
+
+                    &:first-child {
+
+                        max-width: 10%;
+                        width: 10%;
+
+                        @media screen and (max-width: 767px) {
+
+                            max-width: 10% !important;
+                            width: 10% !important;
+                        }
+                    }
+
+                    &:last-child {
+
+                        max-width: 90%;
+                        width: 90%;
+
+                        @media screen and (max-width: 767px) {
+
+                            max-width: 90% !important;
+                            width: 90% !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ------------ IMAGE LIST STYLE START ------------ */
+
+
+
+/* ------------ TAP TO CALL BUTTON STYLE START ------------ */
+
+#OCR-button-tap-to-call-small {
+
+    display: none !important;
+
+    /*@media screen and (max-width: 767px) {
+
+        display: block;
+    }*/
+}
+
+/* ------------ TAP TO CALL BUTTON STYLE START ------------ */
+
+
+
+.OCR-hide-on-tab-small {
+
+    @media screen and (max-width: 767px) {
+
+        display: none !important
+    }
+}

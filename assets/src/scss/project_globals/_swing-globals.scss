@@ -1,0 +1,643 @@
+/**
+ *
+ * STYLE: Swing-O-Things GLOBAL
+ *
+ */
+
+body p {
+
+	font-family: $primary-font;
+}
+
+#content {
+
+	padding-top: 148px;
+}
+
+.oc-container {
+
+	max-width: 80%;
+	margin: auto;
+}
+
+.CG-full-width-map {
+
+	iframe {
+
+		width: 100% !important;
+		margin: 0px !important;
+	}
+}
+
+
+/* ---------- RESPONSIVE MENU STYLE START ---------- */
+
+#responsive-menu-pro-container {
+
+	z-index: 999999 !important;
+}
+
+#responsive-menu-pro-button {
+
+	top: 41px !important;
+    background: transparent !important;
+
+	.responsive-menu-pro-inner {
+
+		background-color: $white !important;
+
+		&::before {
+
+			background-color: $white !important;
+		}
+
+		&::after {
+
+			background-color: $white !important;
+		}
+	}
+}
+/* ---------- RESPONSIVE MENU STYLE START ---------- */
+
+
+
+/* ---------- HERO BANNER STYLE START ---------- */
+
+#SOT-hero-banner {
+
+	> .tve-cb {
+
+		> .thrv-columns {
+
+			> .tcb-flex-row {
+
+				> .tcb-flex-col {
+
+					&:first-child {
+
+						.tcb-col {
+
+							display: flex;
+							justify-content: center;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#SOT-hero-banner-content {
+
+	}
+
+	#SOT-hero-banner-slider {
+
+		.slider-wrapper {
+
+			.nivo-controlNav {
+
+				margin-top: 20px;
+
+				a {
+					background: url("../../../assets/img/slider-buletts.png") -64px 4px no-repeat;
+
+					&.active {
+
+						background: url("../../../assets/img/slider-buletts.png") 0px 4px no-repeat;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+#general-page-header {
+
+	margin-top: 0px !important;
+
+	h1 {
+
+		color: $black !important;
+	}
+}
+
+
+/* ---------- PAGINATION STYLE START ---------- */
+.pgntn-page-pagination {
+
+	width: 100%;
+	text-align: center !important;
+
+	.pgntn-page-pagination-block {
+
+		width: 100% !important;
+		text-align: center !important;
+
+		.pgntn-page-pagination-intro {
+
+			display: none !important
+		}
+
+		.page-numbers {
+
+			background: transparent !important;
+			color: $cg-button !important;
+			padding: 11px 18px;
+		    border: 1px solid #B1B1B1;
+			position: relative;
+
+			&.current {
+
+				color: $white !important;
+				border-color: $cg-button;
+				background-color: $cg-button !important;
+			}
+
+			&.next {
+
+				// content: url(../../../assets/img/next-icon.png);
+				// vertical-align: middle;
+				position: relative;
+				color: transparent !important;
+				padding: 10px 15px;
+			    border: 1px solid #B1B1B1;
+				margin-left: 5px;
+
+				&::after {
+
+					content: '\f178';
+				    font-family: FontAwesome;
+				    position: relative;
+				    color: black;
+					font-weight: 400;
+				}
+			}
+
+			&.prev {
+
+				position: relative;
+				color: transparent !important;
+				padding: 11px 15px;
+			    border: 1px solid #B1B1B1;
+
+				&::after {
+
+					content: '\f177';
+				    font-family: FontAwesome;
+				    position: relative;
+				    color: black;
+					font-weight: 400;
+				}
+			}
+		}
+	}
+}
+
+/* ---------- PAGINATION STYLE END ---------- */
+
+
+
+/* ---------- HOME PAGE CASCADE IMAGE CONTENT STYLE START ---------- */
+#SOT-cascade-image-content {
+
+        @media (max-width: 1024px) {
+
+            width: 100% !important;
+            max-width: 100% !important;
+            padding: 0px !important;
+        }
+
+        .tcb-col {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .tve-cb {
+
+            .thrv-columns {
+
+                &:nth-child(odd) {
+
+                    .tcb-flex-col {
+
+                        position: relative;
+
+                        &:last-child {
+
+							@media (max-width: 1024px) {
+								display: none;
+							}
+
+                            .tve_image_caption {
+
+                                @media (max-width: 1024px) {
+                                    //width: 80px !important;
+                                }
+                            }
+
+                            @media (max-width: 1024px) {
+
+                                // margin-bottom: 45px;
+                            }
+                        }
+                    }
+                }
+
+                &:nth-child(even) {
+
+                    .tcb-flex-col {
+
+                        position: relative;
+
+                        &:first-child {
+
+							@media (max-width: 1024px) {
+								display: none;
+							}
+
+                            .thrv-content-box {
+
+                                .tve_image_caption {
+
+                                    @media (max-width: 1024px) {
+                                        //width: 80px !important;
+                                    }
+                                }
+                            }
+
+                            @media (max-width: 1024px) {
+
+                                // margin-bottom: 45px;
+                            }
+                        }
+                    }
+                }
+
+                .tcb-flex-row {
+
+                    @media (max-width: 1024px) {
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                    .tcb-flex-col {
+
+                        @media (max-width: 1024px) {
+
+                            max-width: 100% !important;
+                        }
+
+                        .tve_image_caption {
+
+                            @media (max-width: 1024px) {
+                                width: 100% !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+/* ---------- HOME PAGE CASCADE IMAGE CONTENT STYLE END ---------- */
+
+
+/* -------------- GRAVITY FORM STYLE START -------------- */
+
+#SOT-gf-contact-form {
+
+    .gform_wrapper {
+
+        padding: 0px !important;
+
+        .gform_title {
+
+            display: none !important;
+        }
+
+        .gform_fields {
+
+            .gfield {
+
+				padding-right: 0px;
+
+                .gfield_label {
+
+                    display: none;
+                }
+
+                .ginput_container {
+
+                    input {
+
+                        margin-top: 0px;
+                        border-radius: 0px;
+                        outline: none;
+						border-color: #C6C6C6;
+                    }
+
+                    textarea {
+
+                        margin-top: 0px;
+                        border-radius: 0px;
+                        height: 130px;
+                        outline: none;
+						border-color: #C6C6C6;
+                    }
+
+                    .gfield_checkbox {
+
+                        li {
+
+                            &:nth-child(even) {
+
+                                float: right;
+                                width: 50%;
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                white-space: nowrap;
+                            }
+
+                            &:nth-child(odd) {
+
+                                float: left;
+                                width: 50%;
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                white-space: nowrap;
+                            }
+
+                            label {
+                                 margin-left: 7px;
+                            }
+                        }
+                    }
+                }
+
+                &.gf_left_half_html{
+
+                    display: table-cell;
+                    width: 34%;
+                    vertical-align: middle;
+
+                    h4 {
+
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+                }
+
+                &.gf_right_half_input {
+
+                    width: 100%;
+                    vertical-align: middle;
+                    display: flex;
+                    align-items: center;
+
+                    label {
+                        max-width: 40%;
+                        white-space: inherit;
+                    }
+                }
+
+
+
+                &.gf_left_half_html_below {
+
+                    display: inline-block;
+                    width: 50%;
+                    vertical-align: middle;
+                    line-height: 20px;
+
+                    h4 {
+
+                        font-size: 16px;
+                    }
+
+                    span {
+
+                        font-weight: 100;
+                        font-size: 14px;
+                        color: #f00;
+                    }
+                }
+
+                &.gf_right_half_input_below {
+
+                    display: inline-block;
+                    width: 50%;
+                    vertical-align: middle;
+
+                    // .gfield_label {
+                    //
+                    //     display: contents !important;
+                    //     font-weight: 100;
+                    //     font-size: 14px;
+                    //     color: #f00;
+                    // }
+                }
+            }
+
+            ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+              color: #8D8D8D !important;
+              opacity: 1; /* Firefox */
+              font-weight: 300 !important;
+            }
+
+            :-ms-input-placeholder { /* Internet Explorer 10-11 */
+              color: #8D8D8D !important;
+              font-weight: 300 !important;
+            }
+
+            ::-ms-input-placeholder { /* Microsoft Edge */
+              color: #8D8D8D !important;
+              font-weight: 300 !important;
+            }
+        }
+    }
+
+    .gform_footer {
+
+        .gform_button {
+
+            border-radius: 0px;
+            text-indent: 0rem;
+			text-transform: uppercase;
+			width: 100%;
+			border-color: $cg-button;
+			background-color: $cg-button;
+        }
+    }
+}
+
+/* -------------- GRAVITY FORM STYLE END -------------- */
+
+
+/* -------------- LOGIN GRAVITY FORM STYLE START -------------- */
+
+#SOT-gf-login {
+
+	.gform_wrapper {
+
+        padding: 0px !important;
+
+        .gform_title {
+
+            display: none !important;
+        }
+
+		.gfield {
+
+			padding-right: 0px;
+
+			&:nth-child(1){
+
+				margin-bottom: 15px;
+			}
+
+			.gfield_label {
+
+				// display: none;
+				font-weight: 400;
+				font-size: 18px;
+				padding-left: 15px;
+				font-weight: 700;
+			}
+
+			.ginput_container {
+
+				input[type="text"] {
+
+					margin-top: 0px;
+					border-radius: 0px;
+					outline: none;
+					min-height: 60px;
+					border: 1px solid #707070;
+					margin-bottom: 20px;
+				}
+
+				&.ginput_container_checkbox {
+
+					margin-top: 0px !important;
+
+					.gfield_checkbox {
+
+						li {
+
+							label {
+
+								margin-left: 7px;
+								font-size: 16px;
+								margin-bottom: 0px !important;
+							}
+
+							input[type="checkbox"] {
+
+								vertical-align: middle;
+							    width: 20px !important;
+							    height: 20px;
+							}
+						}
+					}
+				}
+			}
+		}
+    }
+
+    .gform_footer {
+
+        text-align: left;
+
+        .gform_button {
+
+			border-radius: 0px;
+			border-color: $cg-button;
+			padding: 12px 15px;
+			height: 60px;
+			box-shadow: rgba(0, 0, 0, 0.4) 0px 8px 12px -9px;
+			background-color: $cg-button !important;
+			line-height: 1.2em;
+			font-size: 18px;
+			text-align: center;
+			margin: auto;
+			text-transform: uppercase;
+			text-indent: 0rem;
+			width: 100%;
+        }
+    }
+}
+
+/* -------------- LOGIN GRAVITY FORM STYLE END -------------- */
+
+
+/* -------------- TESTIMONIAL STYLE START -------------- */
+
+#SOT-testtimonial {
+
+	.tvo-testimonial-display-item {
+
+		padding: 0px !important;
+
+		p {
+
+			@media (max-width: 600px) {
+
+				font-size: 12px;
+			}
+		}
+
+		.tvo-image-wrapper {
+
+			margin-bottom: 30px !important;
+
+			.tvo-testimonial-image-cover {
+
+				width: 90px;
+				height: 90px;
+			}
+		}
+
+		.tvo-testimonial-content {
+
+			> h4 {
+
+				display: none;
+			}
+		}
+	}
+
+	.thrlider-nav {
+
+		margin-top: 80px;
+
+		.thrlider-navItem {
+
+			svg {
+
+				circle {
+
+					color: #EDEDED !important;
+					fill: #EDEDED !important;
+				}
+			}
+
+			&.thrlider-active {
+
+				svg {
+
+					circle {
+
+						color: $cg-button !important;
+						fill: $cg-button !important;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* -------------- TESTIMONIAL STYLE END -------------- */
