@@ -65,7 +65,7 @@
 
 							endwhile;
 
-							the_posts_navigation();
+							// the_posts_navigation();
 
 						else :
 
@@ -74,12 +74,6 @@
 						endif; ?>
 
 					</div>
-
-					<!-- <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 d-none">
-
-						<?php get_sidebar(); ?>
-
-					</div> -->
 
 				</div> <!-- End Row -->
 

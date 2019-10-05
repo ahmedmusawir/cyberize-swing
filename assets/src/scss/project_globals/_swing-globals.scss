@@ -4,6 +4,13 @@
  *
  */
 
+.wpape_gallery_button {
+	// border: 1rem dotted red;
+	a.apebtn.active {
+		color: black !important;
+	}
+} 
+
 body p {
 
 	font-family: $primary-font;

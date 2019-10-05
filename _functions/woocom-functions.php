@@ -5,41 +5,78 @@
  *
  */
 
+
+/**
+ *
+ * SINGLE PRODUCT ADD TO CART REMOVAL & CUSTOM BUTTON ADD
+ *
+ */
+
 add_action( 'woocommerce_single_product_summary', 'removing_addtocart_buttons', 1 );
 
-
 function removing_addtocart_buttons() {
-
 
     ## Simple products
     remove_action( 'woocommerce_simple_add_to_cart', 'woocommerce_simple_add_to_cart', 30 );
 
-    // Outputing a custom button in Single product pages (you need to set the button link)
-    function single_product_custom_button( ) {
-
-        global $product;
-
-        // WooCommerce compatibility
-        if ( method_exists( $product, 'get_id' ) ) {
-            $product_id = $product->get_id();
-        } else {
-            $product_id = $product->id;
-        }
-
-        if ( $product_id ) {
-        // if ( has_term( 'categ1', 'product_cat', $product_id ) ) {
-            // Set HERE your button link
-            $link = '/contact-us/';
-            echo '<a href="'.$link.'" class="button alt add_to_cart_button">'.__("Find Out More", "woocommerce").'</a>';
-        }
-    }    
-
 }
 
 #### Adding a custom replacement button ####
+// Outputing a custom button in Single product pages (you need to set the button link)
 
-## Simple products
+## Simple Products
+function single_product_custom_button( ) {
+
+    global $product;
+
+    // WooCommerce compatibility
+    if ( method_exists( $product, 'get_id' ) ) {
+        $product_id = $product->get_id();
+    } else {
+        $product_id = $product->id;
+    }
+
+    if ( $product_id ) {
+        // Set HERE your button link
+        $link = '/contact-us/';
+        echo '<a href="'.$link.'" class="button alt add_to_cart_button">'.__("Find Out More", "woocommerce").'</a>';
+    }
+} 
 add_action( 'woocommerce_simple_add_to_cart', 'single_product_custom_button', 30 );
+
+
+/**
+ *
+ * VARIABLE PRODUCT ADD TO CART REMOVAL & CUSTOM BUTTON ADD
+ *
+ */
+
+add_action( 'woocommerce_single_product_summary', 'hide_add_to_cart_button_variable_product', 1, 0 );
+function hide_add_to_cart_button_variable_product() {
+
+    // Removing add to cart button and quantities only
+    remove_action( 'woocommerce_single_variation', 'woocommerce_single_variation_add_to_cart_button', 20 );
+}
+
+function variable_product_custom_button( ) {
+
+    global $product;
+
+    // WooCommerce compatibility
+    if ( method_exists( $product, 'get_id' ) ) {
+        $product_id = $product->get_id();
+    } else {
+        $product_id = $product->id;
+    }
+
+    if ( $product_id ) {
+        // Set HERE your button link
+        $link = '/contact-us/';
+        echo '<a href="'.$link.'" class="button alt add_to_cart_button">'.__("Find Out More", "woocommerce").'</a>';
+    }
+} 
+add_action( 'woocommerce_variable_add_to_cart', 'variable_product_custom_button', 30 );
+
 
 /**
  *
